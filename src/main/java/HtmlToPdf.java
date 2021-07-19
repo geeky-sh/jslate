@@ -24,7 +24,7 @@ public class HtmlToPdf {
         }
     }
     public static void main(String[] args) throws FileNotFoundException, DocumentException, IOException{
-
+        // ref: https://www.baeldung.com/pdf-conversions-java
         Document document = new Document();
         PdfWriter pdfwriter = PdfWriter.getInstance(document,
                 new FileOutputStream("src/main/resources/sample_html.pdf"));
